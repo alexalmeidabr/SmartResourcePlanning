@@ -1,3 +1,11 @@
+# Smart Resource Planning
+
+This is a personal project used to learn how to create a React-Redux Javascript project.
+
+It is dashboard project designed to help logistic users to analyse the stock of containers in the logistic supply chain.
+
+It used amCharts. It has some good examples using the various types of charts provided by amCharts.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
