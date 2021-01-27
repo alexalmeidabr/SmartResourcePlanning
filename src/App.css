@@ -1,0 +1,342 @@
+:root {
+  
+  /* Define the content witdh by subtracting the bar menu size and padding */
+  --content-width: calc(100vw - 270px);
+
+  /* Define the content heigth by subtracting the top bar */
+  --content-heigth: calc(100vh - 105px);
+
+}
+
+/* RESOURCE VISIBILITY */
+
+.dashboard{
+  
+  display: flex;  
+
+}
+
+@media (min-width: 1910px) {
+
+  .dashboardCenter{
+
+    min-width: 200px;
+    width: calc(0.65 * var(--content-width));
+    height: calc(0.95 * var(--content-heigth));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .dashboardChart{
+  
+    min-width: 200px;
+    width: calc(0.65 * var(--content-width));
+    height: calc(0.95 * var(--content-heigth));
+    min-height: 200px;
+    
+  }
+
+  .dashboardColRight{
+
+    width: calc(0.24 * var(--content-width));
+    height: calc(0.95 * var(--content-heigth));
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5px;
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1310px) and (max-width: 1909px)  {
+
+  .dashboardCenter{
+
+    min-width: 200px;
+    width: calc(2.7 * ((var(--content-width) - 200px)/3.7));
+    height: calc(0.95 * var(--content-heigth));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .dashboardChart{
+  
+    min-width: 200px;
+    width: calc(2.7 * ((var(--content-width) - 200px)/3.7));
+    height: calc(0.95 * var(--content-heigth));
+    min-height: 200px;
+    
+  }
+
+  .dashboardColRight{
+
+    width: calc(0.24 * var(--content-width));
+    height: calc(0.95 * var(--content-heigth));
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5px;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1309px)  {
+
+  .dashboardCenter{
+
+    min-width: 200px;
+    /* width: calc(2.7 * ((var(--content-width) - 200px)/3.7)); */
+    width: calc(var(--content-width) - 500px);
+    height: calc(0.95 * var(--content-heigth));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .dashboardChart{
+  
+    min-width: 400px;
+    /* width: calc(2.7 * ((var(--content-width) - 200px)/3.7)); */
+    width: calc(var(--content-width) - 500px);
+    height: calc(0.95 * var(--content-heigth));
+    min-height: 200px;
+    
+  }
+  
+  .dashboardColRight{
+  
+    width: calc((var(--content-width) - 200px)/3.7);
+    height: calc(0.95 * var(--content-heigth));
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5px;
+    min-width: 300px;
+  }
+
+}
+
+.dashboardCol{
+
+  width: calc(0.1 * var(--content-width));
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* RESOURCE VISIBILITY  - CONTAINERS */
+
+.summary{
+
+  display: flex;
+  justify-content: space-around;  
+  flex-direction: column;
+  align-items: stretch;    
+  width: calc(var(--content-width) - 20px);
+
+}
+
+.sumaryItem{
+
+  flex-grow: 1;
+    
+}
+
+.containersTable{
+
+  width: calc(var(--content-width) - 20px);
+  margin-top: -20px;
+
+}
+
+.ResourceStockTable{
+
+  width: calc(var(--content-width) - 20px);
+  margin-top: -20px;
+  
+}
+
+.resourceTable{
+  
+  min-width: 200px;
+  width: 75vw;
+  height: 80vh;
+  min-height: 200px;
+  margin-top: 20px;
+  
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.container{
+  
+  background-color: lightgrey;
+
+}
+
+.menu{
+
+  display: flex;
+  width: 250px;
+}
+
+.content{
+  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  background-color: white;  
+}
+
+
+
+img {
+  width: 78vw;
+  height: 82vh;
+  margin-top: 15px;
+}
+
+
+
+.paper{
+
+  display: flex;
+  min-width: 200px;
+  min-height: 200px;
+  margin-top: 25px;
+  margin-left: 0px;
+}
+
+.resourceBarChart{
+
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 200px;
+  width: 50vw;
+  height: 75vh;
+  min-height: 200px;
+  margin-top: 5px;
+  
+}
+
+.appArea{
+
+  display:flex;
+  justify-content: flex-start
+
+}
+
+.searchBar{
+
+  display: flex;
+  min-width: 200px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: 20px;
+  
+}
+
+.resourcePieChart{
+  
+  min-width: 200px;
+  width: 55vw;
+  height: 80vh;
+  min-height: 200px;  
+}
+
+.resourceBarChart{
+  
+  min-width: 200px;
+  width: 55vw;
+  height: 60vh;
+  min-height: 200px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+
+
+.sdBalanceChart{
+  
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 200px;
+  width: 75vw;
+  height: 45vh;
+  min-height: 200px;
+  margin-top: 5px;
+  position: relative;
+  top: 0px;
+
+}
+
+.SDPieChart{
+  
+  min-width: 200px;
+  width: 35vw;
+  height: 50vh;
+  min-height: 200px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.SDTables{
+
+  min-width: 200px;
+  width: 75vw;
+  height: 80vh;
+  min-height: 200px;
+  margin-top: 20px;
+
+}
+
+.MapsWorldBubble{
+
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 200px;
+  width: var(--content-width);
+  height: var(--content-heigth);
+  min-height: 200px;
+  margin-top: 5px;
+
+}
+
+.resourceConfig{
+
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.resourceConfigLeft{
+
+  flex-grow: 4;
+
+}
+
+.resourceConfigRight{
+
+  flex-grow: 1; 
+  padding-left: 15px;
+  
+}
